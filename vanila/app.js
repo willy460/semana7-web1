@@ -15,10 +15,10 @@ function saveStudents(students) {
 function deleteStudent(index) {
     const students = getStudents();
     if (index >= 0 && index < students.length) {
-        students.splice(index, 1);
+        students.splice(index, 1); // elimina por posicion
         saveStudents(students);
     }
-    renderList();
+    renderList(); //refresca la lista
 
 }
 
